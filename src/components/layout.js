@@ -1,10 +1,11 @@
 import React from "react"
 import { ContainerWrapper } from "../elements"
-import { Nav, Footer } from "../components"
+import { Nav, Footer, SEO } from "../components"
 
 const Layout = ({ children }) => {
   return (
     <ContainerWrapper>
+      <SEO title="Home" />
       <Nav />
       {children}
       <Footer />

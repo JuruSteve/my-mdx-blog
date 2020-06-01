@@ -1,4 +1,4 @@
-export * from "./Layout"
+export * from "./seo"
 export * from "./Nav"
 export * from "./Footer"
 export * from "./FeatureImage"
