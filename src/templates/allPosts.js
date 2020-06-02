@@ -23,17 +23,18 @@ const AllPosts = ({ pageContext, data }) => {
         <P color="dark2" textAlign="center">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quam
         </P>
-        {posts.map(post => {
-          return (
-            <ContentCard
-              key={post.node.frontmatter.slug}
-              date={post.node.frontmatter.date}
-              title={post.node.frontmatter.title}
-              excerpt={post.node.frontmatter.excerpt}
-              slug={post.node.frontmatter.slug}
-            />
-          )
-        })}
+        {posts &&
+          posts.map((post, i) => {
+            return (
+              <ContentCard
+                key={post.node.frontmatter.slug}
+                date={post.node.frontmatter.date}
+                title={post.node.frontmatter.title}
+                excerpt={post.node.frontmatter.excerpt}
+                slug={post.node.frontmatter.slug}
+              />
+            )
+          })}
       </Content>
       <Pagination
         isFirst={isFirst}

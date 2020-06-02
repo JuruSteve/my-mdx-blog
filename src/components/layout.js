@@ -1,6 +1,7 @@
 import React from "react"
 import { ContainerWrapper } from "../elements"
-import { Nav, Footer, SEO } from "../components"
+import { Nav, Footer } from "../components"
+import SEO from "./seo"
 
 const Layout = ({ children }) => {
   return (

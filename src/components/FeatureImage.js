@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "gatsby-image"
+import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import { FeatureImageWrapper } from "../elements"
 
@@ -13,10 +13,10 @@ export const FeatureImage = ({ fixed }) => {
       }
     }
   `)
-
+  console.log(data.imageSharp.fixed)
   return (
     <FeatureImageWrapper>
-      <Image
+      <Img
         fixed={fixed ? fixed : data.imageSharp.fixed}
         style={{
           position: "absolute",
